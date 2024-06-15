@@ -1,0 +1,1220 @@
+
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<script type="text/html" id="tmpl-bb-link-preview">
+<% if ( link_scrapping ) { %>
+	<% if ( link_loading ) { %>
+		<span class="bb-url-scrapper-loading bb-ajax-loader"><i class="bb-icon-l bb-icon-spinner animate-spin"></i>Loading preview...</span>
+	<% } %>
+	<% if ( link_success || link_error ) { %>
+		<a title="Cancel Preview" href="#" id="bb-close-link-suggestion">Remove Preview</a>
+		<div class="bb-link-preview-container">
+
+			<% if ( link_images && link_images.length && link_success && ! link_error && '' !== link_image_index ) { %>
+				<div id="bb-url-scrapper-img-holder">
+					<div class="bb-link-preview-image">
+						<div class="bb-link-preview-image-cover">
+							<img src="<%= link_images[link_image_index] %>"/>
+						</div>
+						<div class="bb-link-preview-icons">
+							<%
+							if ( link_images.length > 1 ) { %>
+								<a data-bp-tooltip-pos="up" data-bp-tooltip="Change image" href="#" class="icon-exchange toolbar-button bp-tooltip" id="icon-exchange"><i class="bb-icon-l bb-icon-exchange"></i></a>
+							<% } %>
+							<% if ( link_images.length ) { %>
+								<a data-bp-tooltip-pos="up" data-bp-tooltip="Remove image" href="#" class="icon-image-slash toolbar-button bp-tooltip" id="bb-link-preview-remove-image"><i class="bb-icon-l bb-icon-image-slash"></i></a>
+							<% } %>
+							<a data-bp-tooltip-pos="up" data-bp-tooltip="Confirm" class="toolbar-button bp-tooltip" href="#" id="bb-link-preview-select-image">
+								<i class="bb-icon-check bb-icon-l"></i>
+							</a>
+						</div>
+					</div>
+					<% if ( link_images.length > 1 ) { %>
+						<div class="bb-url-thumb-nav">
+							<button type="button" id="bb-url-prevPicButton"><span class="bb-icon-l bb-icon-angle-left"></span></button>
+							<button type="button" id="bb-url-nextPicButton"><span class="bb-icon-l bb-icon-angle-right"></span></button>
+							<div id="bb-url-scrapper-img-count">
+								Image <%= link_image_index + 1 %>&nbsp;of&nbsp;<%= link_images.length %>
+							</div>
+						</div>
+					<% } %>
+				</div>
+			<% } %>
+
+			<% if ( link_success && ! link_error && link_url ) { %>
+				<div class="bb-link-preview-info">
+					<% var a = document.createElement('a');
+						a.href = link_url;
+						var hostname = a.hostname;
+						var domainName = hostname.replace('www.', '' );
+					%>
+
+					<% if ( 'undefined' !== typeof link_title && link_title.trim() && link_description ) { %>
+						<p class="bb-link-preview-link-name"><%= domainName %></p>
+					<% } %>
+
+					<% if ( link_success && ! link_error ) { %>
+						<p class="bb-link-preview-title"><%= link_title %></p>
+					<% } %>
+
+					<% if ( link_success && ! link_error ) { %>
+						<div class="bb-link-preview-excerpt"><p><%= link_description %></p></div>
+					<% } %>
+				</div>
+			<% } %>
+			<% if ( link_error && ! link_success ) { %>
+				<div id="bb-url-error" class="bb-url-error"><%= link_error_msg %></div>
+			<% } %>
+		</div>
+	<% } %>
+<% } %>
+</script>
+
+            <style id="bb_learndash_30_custom_colors">.learndash-wrapper .ld-item-list .ld-item-list-item.ld-item-lesson-item .ld-item-name .ld-item-title .ld-item-components span.ld-status-waiting,.learndash-wrapper .ld-item-list .ld-item-list-item.ld-item-lesson-item .ld-item-name .ld-item-title .ld-item-components span.ld-status-waiting span.ld-icon,.learndash-wrapper .ld-status-waiting{background-color:#ffd200!important}</style>
+
+			<link rel='preload' as='script' href='https://digination.dev/wp-content/cache/asset-cleanup/js/body-f9fdc7a153dfb146c72077a606088892afcd116f.js' data-wpacu-preload-js='1'>
+
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>Learn Digital Skills for a brighter tomorrow - DigiNation</title>
+<meta name="description" content="We empower people all over the world to build a better future using technology. Our aim is to provide free and easy to learn courses and articles in the digital space."/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://digination.dev/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Learn Digital Skills for a brighter tomorrow - DigiNation" />
+<meta property="og:description" content="We empower people all over the world to build a better future using technology. Our aim is to provide free and easy to learn courses and articles in the digital space." />
+<meta property="og:url" content="https://digination.dev/" />
+<meta property="og:site_name" content="DigiNation" />
+<meta property="og:updated_time" content="2024-01-23T13:41:19+00:00" />
+<meta property="og:image" content="https://digination.dev/wp-content/uploads/2021/01/Flat-Line-14.jpg" />
+<meta property="og:image:secure_url" content="https://digination.dev/wp-content/uploads/2021/01/Flat-Line-14.jpg" />
+<meta property="og:image:width" content="1170" />
+<meta property="og:image:height" content="780" />
+<meta property="og:image:alt" content="learn" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2020-09-25T15:34:44+00:00" />
+<meta property="article:modified_time" content="2024-01-23T13:41:19+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Learn Digital Skills for a brighter tomorrow - DigiNation" />
+<meta name="twitter:description" content="We empower people all over the world to build a better future using technology. Our aim is to provide free and easy to learn courses and articles in the digital space." />
+<meta name="twitter:image" content="https://digination.dev/wp-content/uploads/2021/01/Flat-Line-14.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="DigiNation" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="2 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://digination.dev/#organization","name":"DigiNation","url":"https://digination.dev","logo":{"@type":"ImageObject","@id":"https://digination.dev/#logo","url":"https://digination.dev/wp-content/uploads/2021/02/digination-logo-4-150x150.png","contentUrl":"https://digination.dev/wp-content/uploads/2021/02/digination-logo-4-150x150.png","caption":"DigiNation","inLanguage":"en-US"}},{"@type":"WebSite","@id":"https://digination.dev/#website","url":"https://digination.dev","name":"DigiNation","publisher":{"@id":"https://digination.dev/#organization"},"inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":"https://digination.dev/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://digination.dev/wp-content/uploads/2020/09/map.png","url":"https://digination.dev/wp-content/uploads/2020/09/map.png","width":"200","height":"200","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://digination.dev/#webpage","url":"https://digination.dev/","name":"Learn Digital Skills for a brighter tomorrow - DigiNation","datePublished":"2020-09-25T15:34:44+00:00","dateModified":"2024-01-23T13:41:19+00:00","about":{"@id":"https://digination.dev/#organization"},"isPartOf":{"@id":"https://digination.dev/#website"},"primaryImageOfPage":{"@id":"https://digination.dev/wp-content/uploads/2020/09/map.png"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://digination.dev/author/gabriel/","name":"DigiNation","url":"https://digination.dev/author/gabriel/","image":{"@type":"ImageObject","@id":"https://digination.dev/wp-content/uploads/avatars/1/60198cd0286d1-bpthumb.png","url":"https://digination.dev/wp-content/uploads/avatars/1/60198cd0286d1-bpthumb.png","caption":"DigiNation","inLanguage":"en-US"},"sameAs":["https://digination.dev"],"worksFor":{"@id":"https://digination.dev/#organization"}},{"@type":"Article","headline":"Learn Digital Skills for a brighter tomorrow - DigiNation","keywords":"learn","datePublished":"2020-09-25T15:34:44+00:00","dateModified":"2024-01-23T13:41:19+00:00","author":{"@id":"https://digination.dev/author/gabriel/","name":"DigiNation"},"publisher":{"@id":"https://digination.dev/#organization"},"description":"We empower people all over the world to build a better future using technology. Our aim is to provide free and easy to learn courses and articles in the digital space.","name":"Learn Digital Skills for a brighter tomorrow - DigiNation","@id":"https://digination.dev/#richSnippet","isPartOf":{"@id":"https://digination.dev/#webpage"},"image":{"@id":"https://digination.dev/wp-content/uploads/2020/09/map.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://digination.dev/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="alternate" type="application/rss+xml" title="DigiNation &raquo; Feed" href="https://digination.dev/feed/" />
+<link rel="alternate" type="application/rss+xml" title="DigiNation &raquo; Comments Feed" href="https://digination.dev/comments/feed/" />
+<link rel='stylesheet' id='wpacu-combined-css-head-1' href='https://digination.dev/wp-content/cache/asset-cleanup/css/head-e10c02ab89b0b933d874379f7ddcd55a7b1ed426.css' type='text/css' media='screen' />
+
+<link rel='stylesheet' id='wpacu-combined-css-head-2' href='https://digination.dev/wp-content/cache/asset-cleanup/css/head-aef25e18e71f4b48997ca1f41db3135f3f1e5762.css' type='text/css' media='all' />
+
+
+<style id='rank-math-toc-block-style-inline-css' type='text/css'>.wp-block-rank-math-toc-block nav ol{counter-reset:item}.wp-block-rank-math-toc-block nav ol li{display:block}.wp-block-rank-math-toc-block nav ol li:before{content:counters(item,".") " ";counter-increment:item}</style>
+
+<style id='classic-theme-styles-inline-css' type='text/css'>/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id='global-styles-inline-css' type='text/css'>body{--wp--preset--color--black:#000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#ffffff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;--wp--preset--spacing--20:0.44rem;--wp--preset--spacing--30:0.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem;--wp--preset--shadow--natural:6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep:12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp:6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined:6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp:6px 6px 0px rgba(0, 0, 0, 1)}:where(.is-layout-flex){gap:.5em}:where(.is-layout-grid){gap:.5em}body .is-layout-flow>.alignleft{float:left;margin-inline-start:0;margin-inline-end:2em}body .is-layout-flow>.alignright{float:right;margin-inline-start:2em;margin-inline-end:0}body .is-layout-flow>.aligncenter{margin-left:auto!important;margin-right:auto!important}body .is-layout-constrained>.alignleft{float:left;margin-inline-start:0;margin-inline-end:2em}body .is-layout-constrained>.alignright{float:right;margin-inline-start:2em;margin-inline-end:0}body .is-layout-constrained>.aligncenter{margin-left:auto!important;margin-right:auto!important}body .is-layout-constrained>:where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:var(--wp--style--global--content-size);margin-left:auto!important;margin-right:auto!important}body .is-layout-constrained>.alignwide{max-width:var(--wp--style--global--wide-size)}body .is-layout-flex{display:flex}body .is-layout-flex{flex-wrap:wrap;align-items:center}body .is-layout-flex>*{margin:0}body .is-layout-grid{display:grid}body .is-layout-grid>*{margin:0}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}.has-black-color{color:var(--wp--preset--color--black)!important}.has-cyan-bluish-gray-color{color:var(--wp--preset--color--cyan-bluish-gray)!important}.has-white-color{color:var(--wp--preset--color--white)!important}.has-pale-pink-color{color:var(--wp--preset--color--pale-pink)!important}.has-vivid-red-color{color:var(--wp--preset--color--vivid-red)!important}.has-luminous-vivid-orange-color{color:var(--wp--preset--color--luminous-vivid-orange)!important}.has-luminous-vivid-amber-color{color:var(--wp--preset--color--luminous-vivid-amber)!important}.has-light-green-cyan-color{color:var(--wp--preset--color--light-green-cyan)!important}.has-vivid-green-cyan-color{color:var(--wp--preset--color--vivid-green-cyan)!important}.has-pale-cyan-blue-color{color:var(--wp--preset--color--pale-cyan-blue)!important}.has-vivid-cyan-blue-color{color:var(--wp--preset--color--vivid-cyan-blue)!important}.has-vivid-purple-color{color:var(--wp--preset--color--vivid-purple)!important}.has-black-background-color{background-color:var(--wp--preset--color--black)!important}.has-cyan-bluish-gray-background-color{background-color:var(--wp--preset--color--cyan-bluish-gray)!important}.has-white-background-color{background-color:var(--wp--preset--color--white)!important}.has-pale-pink-background-color{background-color:var(--wp--preset--color--pale-pink)!important}.has-vivid-red-background-color{background-color:var(--wp--preset--color--vivid-red)!important}.has-luminous-vivid-orange-background-color{background-color:var(--wp--preset--color--luminous-vivid-orange)!important}.has-luminous-vivid-amber-background-color{background-color:var(--wp--preset--color--luminous-vivid-amber)!important}.has-light-green-cyan-background-color{background-color:var(--wp--preset--color--light-green-cyan)!important}.has-vivid-green-cyan-background-color{background-color:var(--wp--preset--color--vivid-green-cyan)!important}.has-pale-cyan-blue-background-color{background-color:var(--wp--preset--color--pale-cyan-blue)!important}.has-vivid-cyan-blue-background-color{background-color:var(--wp--preset--color--vivid-cyan-blue)!important}.has-vivid-purple-background-color{background-color:var(--wp--preset--color--vivid-purple)!important}.has-black-border-color{border-color:var(--wp--preset--color--black)!important}.has-cyan-bluish-gray-border-color{border-color:var(--wp--preset--color--cyan-bluish-gray)!important}.has-white-border-color{border-color:var(--wp--preset--color--white)!important}.has-pale-pink-border-color{border-color:var(--wp--preset--color--pale-pink)!important}.has-vivid-red-border-color{border-color:var(--wp--preset--color--vivid-red)!important}.has-luminous-vivid-orange-border-color{border-color:var(--wp--preset--color--luminous-vivid-orange)!important}.has-luminous-vivid-amber-border-color{border-color:var(--wp--preset--color--luminous-vivid-amber)!important}.has-light-green-cyan-border-color{border-color:var(--wp--preset--color--light-green-cyan)!important}.has-vivid-green-cyan-border-color{border-color:var(--wp--preset--color--vivid-green-cyan)!important}.has-pale-cyan-blue-border-color{border-color:var(--wp--preset--color--pale-cyan-blue)!important}.has-vivid-cyan-blue-border-color{border-color:var(--wp--preset--color--vivid-cyan-blue)!important}.has-vivid-purple-border-color{border-color:var(--wp--preset--color--vivid-purple)!important}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple)!important}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan)!important}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange)!important}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red)!important}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray)!important}.has-cool-to-warm-spectrum-gradient-background{background:var(--wp--preset--gradient--cool-to-warm-spectrum)!important}.has-blush-light-purple-gradient-background{background:var(--wp--preset--gradient--blush-light-purple)!important}.has-blush-bordeaux-gradient-background{background:var(--wp--preset--gradient--blush-bordeaux)!important}.has-luminous-dusk-gradient-background{background:var(--wp--preset--gradient--luminous-dusk)!important}.has-pale-ocean-gradient-background{background:var(--wp--preset--gradient--pale-ocean)!important}.has-electric-grass-gradient-background{background:var(--wp--preset--gradient--electric-grass)!important}.has-midnight-gradient-background{background:var(--wp--preset--gradient--midnight)!important}.has-small-font-size{font-size:var(--wp--preset--font-size--small)!important}.has-medium-font-size{font-size:var(--wp--preset--font-size--medium)!important}.has-large-font-size{font-size:var(--wp--preset--font-size--large)!important}.has-x-large-font-size{font-size:var(--wp--preset--font-size--x-large)!important}.wp-block-navigation a:where(:not(.wp-element-button)){color:inherit}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}.wp-block-pullquote{font-size:1.5em;line-height:1.6}</style>
+
+
+
+
+
+<style id='spai-fadein-inline-css' type='text/css'>img[data-spai]{opacity:0}div.woocommerce-product-gallery img[data-spai]{opacity:1}img[data-spai-egr],img[data-spai-lazy-loaded],img[data-spai-upd]{transition:opacity .5s linear .2s;-webkit-transition:opacity .5s linear .2s;-moz-transition:opacity .5s linear .2s;-o-transition:opacity .5s linear .2s;opacity:1}</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=47bf7979871e0ea2c0259fb99acf9056' type='text/css' media='all' />
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="text/javascript" id="bb-twemoji-js-extra">
+/* <![CDATA[ */
+var bbemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="bb-reaction-js-extra">
+/* <![CDATA[ */
+var bbReactionVars = {"ajax_url":"https:\/\/digination.dev\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="bb-tutorlms-admin-js-extra">
+/* <![CDATA[ */
+var bbTutorLMSVars = {"ajax_url":"https:\/\/digination.dev\/wp-admin\/admin-ajax.php","select_course_placeholder":"Start typing a course name to associate with this group."};
+/* ]]> */
+</script>
+<script type='text/javascript' id='wpacu-combined-js-head-group-1' src='https://digination.dev/wp-content/cache/asset-cleanup/js/head-4dcb81c7ee865ae489189920682144027eb3d372.js'></script>
+<link rel="https://api.w.org/" href="https://digination.dev/wp-json/" /><link rel="alternate" type="application/json" href="https://digination.dev/wp-json/wp/v2/pages/62" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://digination.dev/xmlrpc.php?rsd" />
+
+<link rel='shortlink' href='https://digination.dev/' />
+<link rel="alternate" type="application/json+oembed" href="https://digination.dev/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdigination.dev%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://digination.dev/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdigination.dev%2F&#038;format=xml" />
+
+	<script>var ajaxurl='https://digination.dev/wp-admin/admin-ajax.php'</script>
+
+	<meta name="framework" content="Redux 4.3.1" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta name="generator" content="Elementor 3.18.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<link rel="icon" href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/digination.dev/wp-content/uploads/2021/02/digination-logo-4-150x150.png" data-spai-egr="1" sizes="32x32" />
+<link rel="icon" href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/digination.dev/wp-content/uploads/2021/02/digination-logo-4-300x300.png" data-spai-egr="1" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/digination.dev/wp-content/uploads/2021/02/digination-logo-4-300x300.png" data-spai-egr="1" />
+<meta name="msapplication-TileImage" content="https://digination.dev/wp-content/uploads/2021/02/digination-logo-4-300x300.png" />
+<style id="buddyboss_theme-style">:root{--bb-primary-color:#007CFF;--bb-primary-color-rgb:0, 124, 255;--bb-body-background-color:#FAFBFD;--bb-body-background-color-rgb:250, 251, 253;--bb-content-background-color:#FFFFFF;--bb-content-alternate-background-color:#FBFBFC;--bb-content-border-color:#E7E9EC;--bb-content-border-color-rgb:231, 233, 236;--bb-cover-image-background-color:#607387;--bb-headings-color:#122B46;--bb-headings-color-rgb:18, 43, 70;--bb-body-text-color:#4D5C6D;--bb-body-text-color-rgb:77, 92, 109;--bb-alternate-text-color:#A3A5A9;--bb-alternate-text-color-rgb:163, 165, 169;--bb-primary-button-background-regular:#385DFF;--bb-primary-button-background-hover:#1E42DD;--bb-primary-button-border-regular:#385DFF;--bb-primary-button-border-hover:#1E42DD;--bb-primary-button-text-regular:#FFFFFF;--bb-primary-button-text-regular-rgb:255, 255, 255;--bb-primary-button-text-hover:#FFFFFF;--bb-primary-button-text-hover-rgb:255, 255, 255;--bb-secondary-button-background-regular:#F2F4F5;--bb-secondary-button-background-hover:#385DFF;--bb-secondary-button-border-regular:#F2F4F5;--bb-secondary-button-border-hover:#385DFF;--bb-secondary-button-text-regular:#1E2132;--bb-secondary-button-text-hover:#FFFFFF;--bb-header-background:#FFFFFF;--bb-header-alternate-background:#F2F4F5;--bb-header-links:#939597;--bb-header-links-hover:#007CFF;--bb-header-mobile-logo-size:px;--bb-header-height:76px;--bb-sidenav-background:#FFFFFF;--bb-sidenav-text-regular:#939597;--bb-sidenav-text-hover:#939597;--bb-sidenav-text-active:#FFFFFF;--bb-sidenav-menu-background-color-regular:#FFFFFF;--bb-sidenav-menu-background-color-hover:#F2F4F5;--bb-sidenav-menu-background-color-active:#007CFF;--bb-sidenav-count-text-color-regular:#939597;--bb-sidenav-count-text-color-hover:#FFFFFF;--bb-sidenav-count-text-color-active:#007CFF;--bb-sidenav-count-background-color-regular:#F2F4F5;--bb-sidenav-count-background-color-hover:#007CFF;--bb-sidenav-count-background-color-active:#FFFFFF;--bb-footer-background:#FFFFFF;--bb-footer-widget-background:#FFFFFF;--bb-footer-text-color:#5A5A5A;--bb-footer-menu-link-color-regular:#5A5A5A;--bb-footer-menu-link-color-hover:#385DFF;--bb-footer-menu-link-color-active:#1E2132;--bb-admin-screen-bgr-color:#FAFBFD;--bb-admin-screen-txt-color:#122B46;--bb-login-register-link-color-regular:#5A5A5A;--bb-login-register-link-color-hover:#1E42DD;--bb-login-register-button-background-color-regular:#385DFF;--bb-login-register-button-background-color-hover:#1E42DD;--bb-login-register-button-border-color-regular:#385DFF;--bb-login-register-button-border-color-hover:#1E42DD;--bb-login-register-button-text-color-regular:#FFFFFF;--bb-login-register-button-text-color-hover:#FFFFFF;--bb-label-background-color:#D7DFFF;--bb-label-text-color:#385DFF;--bb-tooltip-background:#122B46;--bb-tooltip-background-rgb:18, 43, 70;--bb-tooltip-color:#FFFFFF;--bb-default-notice-color:#007CFF;--bb-default-notice-color-rgb:0, 124, 255;--bb-success-color:#1CD991;--bb-success-color-rgb:28, 217, 145;--bb-warning-color:#F7BA45;--bb-warning-color-rgb:247, 186, 69;--bb-danger-color:#EF3E46;--bb-danger-color-rgb:239, 62, 70;--bb-login-custom-heading-color:#FFFFFF;--bb-button-radius:100px;--bb-block-radius:10px;--bb-option-radius:5px;--bb-block-radius-inner:6px;--bb-input-radius:6px;--bb-label-type-radius:6px;--bb-checkbox-radius:5.4px;--bb-primary-button-focus-shadow:0px 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.08);--bb-secondary-button-focus-shadow:0px 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.08);--bb-outline-button-focus-shadow:0px 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.08);--bb-input-focus-shadow:0px 0px 0px 2px rgba(var(--bb-primary-color-rgb), 0.1);--bb-input-focus-border-color:var(--bb-primary-color);--bb-widget-title-text-transform:none}.bb-style-primary-bgr-color{background-color:#007CFF}.bb-style-border-radius{border-radius:100px}#site-logo .site-title img{max-height:inherit}.site-header-container .site-branding{min-width:47px}#site-logo .site-title .bb-logo img,#site-logo .site-title img.bb-logo,.buddypanel .site-title img{width:47px}.site-header-container #site-logo .bb-logo img,.site-header-container #site-logo .site-title img.bb-logo,.site-title img.bb-mobile-logo{max-height:76px}.sticky-header .site-content,body.buddypress.sticky-header .site-content,.bb-buddypanel.sticky-header .site-content,.single-sfwd-quiz.bb-buddypanel.sticky-header .site-content,.single-sfwd-lessons.bb-buddypanel.sticky-header .site-content,.single-sfwd-topic.bb-buddypanel.sticky-header .site-content{padding-top:76px}.site-header .site-header-container,.header-search-wrap,.header-search-wrap input.search-field,.header-search-wrap form.search-form{height:76px}.sticky-header .bp-feedback.bp-sitewide-notice{top:76px}@media screen and (max-width:767px){.bb-mobile-header{height:76px}#learndash-content .lms-topic-sidebar-wrapper .lms-topic-sidebar-data{height:calc(90vh - 76px)}}[data-balloon]:after,[data-bp-tooltip]:after{background-color:rgba(18,43,70,1);box-shadow:none}[data-balloon]:before,[data-bp-tooltip]:before{background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba( 18,43,70,1 )%22%20transform%3D%22rotate(0)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto}[data-bp-tooltip][data-bp-tooltip-pos="right"]:before,[data-balloon][data-balloon-pos='right']:before{background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba( 18,43,70,1 )%22%20transform%3D%22rotate(90 6 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto}[data-bp-tooltip][data-bp-tooltip-pos="left"]:before,[data-balloon][data-balloon-pos='left']:before{background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba( 18,43,70,1 )%22%20transform%3D%22rotate(-90 18 18)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto}[data-bp-tooltip][data-bp-tooltip-pos="down-left"]:before,[data-bp-tooltip][data-bp-tooltip-pos="down"]:before,[data-balloon][data-balloon-pos='down']:before{background:no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba( 18,43,70,1 )%22%20transform%3D%22rotate(180 18 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");background-size:100% auto}</style>
+            <style id="buddyboss_theme-bp-style">#buddypress #header-cover-image.has-default,#buddypress #header-cover-image.has-default .guillotine-window img,.bs-group-cover.has-default a{background-color:#607387}body.buddypress.register.login-split-page .login-split .split-overlay,body.buddypress.activation.login-split-page .login-split .split-overlay{opacity:.3}</style>
+
+            <style id="buddyboss_theme-learndash-style">.learndash-wrapper .bb-ld-tabs #learndash-course-content{top:-118px}html[dir="rtl"] .learndash_next_prev_link a.next-link,html[dir="rtl"] .learndash_next_prev_link span.next-link{border-radius:100px 0 0 100px}html[dir="rtl"] .learndash_next_prev_link a.prev-link,html[dir="rtl"] .learndash_next_prev_link span.prev-link{border-radius:0 100px 100px 0}</style>
+
+		<style id="buddyboss_theme-custom-style">a.bb-close-panel i{top:21px}</style>
+				<style type="text/css" id="wp-custom-css">.moderation-popup.mfp-hide{display:none}</style>
+
+	<link href="https://cdn.shortpixel.ai" rel="preconnect" crossorigin></head>
+
+	<body class="home-page bp-nouveau home page-template page-template-elementor_header_footer page page-id-62 wp-custom-logo buddyboss-theme bb-template-v2 buddypanel-logo-off bb-custom-typo  header-style-1  menu-style-standard sticky-header elementor-default elementor-template-full-width elementor-kit-25 elementor-page elementor-page-62 no-js learndash-theme">
+
+
+
+		<div id="page" class="site">
+
+
+			<header id="masthead" class="site-header site-header--bb">
+				<div class="container site-header-container flex default-header">
+    <a href="#" class="bb-toggle-panel"><i class="bb-icon-l bb-icon-sidebar"></i></a>
+
+<div id="site-logo" class="site-branding buddypanel_logo_display_off">
+	<div class="site-title">
+		<a href="https://digination.dev/" rel="home">
+			DigiNation		</a>
+	</div>
+</div>	<nav id="site-navigation" class="main-navigation" data-menu-space="120">
+		<div id="primary-navbar">
+			<ul id="primary-menu" class="primary-menu bb-primary-overflow"><li id="menu-item-265" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-265 no-icon"><a href="https://digination.dev/category/learn-to-code/"><span>Learn to Code</span></a></li>
+<li id="menu-item-266" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-266 no-icon"><a href="https://digination.dev/category/web-development/"><span>Web development</span></a></li>
+<li id="menu-item-285" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-285 no-icon"><a href="https://digination.dev/category/inspiration/"><span>Inspiration</span></a></li>
+<li id="menu-item-334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334 no-icon"><a href="https://digination.dev/about/"><span>About</span></a></li>
+</ul>			<div id="navbar-collapse">
+				<a class="more-button" href="#"><i class="bb-icon-f bb-icon-ellipsis-h"></i></a>
+				<div class="sub-menu">
+					<div class="wrapper">
+						<ul id="navbar-extend" class="sub-menu-inner"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+<div id="header-aside" class="header-aside name_and_avatar">
+	<div class="header-aside-inner">
+
+
+							<a href="#" class="header-search-link" data-balloon-pos="down" data-balloon="Search"><i class="bb-icon-l bb-icon-search"></i></a>
+				<span class="search-separator bb-separator"></span>
+								<div class="bb-header-buttons">
+					<a href="https://digination.dev/wp-login.php" class="button small outline signin-button link">Sign in</a>
+
+											<a href="https://digination.dev/register/" class="button small signup">Sign up</a>
+									</div>
+
+	</div><!-- .header-aside-inner -->
+</div><!-- #header-aside -->
+</div>
+<div class="bb-mobile-header-wrapper bb-single-icon">
+	<div class="bb-mobile-header flex align-items-center">
+		<div class="bb-left-panel-icon-wrap">
+			<a href="#" class="push-left bb-left-panel-mobile"><i class="bb-icon-l bb-icon-bars"></i></a>
+		</div>
+
+		<div class="flex-1 mobile-logo-wrapper">
+
+			<div class="site-title">
+
+				<a href="https://digination.dev/" rel="home">
+					DigiNation				</a>
+
+			</div>
+		</div>
+		<div class="header-aside">
+								<a data-balloon-pos="left" data-balloon="Search" href="#" class="push-right header-search-link"><i class="bb-icon-l bb-icon-search"></i></a>
+							</div>
+	</div>
+
+	<div class="header-search-wrap">
+		<div class="container">
+
+<form role="search" method="get" class="search-form" action="https://digination.dev/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field-top" placeholder="Search" value="" name="s" />
+	</label>
+</form>
+			<a data-balloon-pos="left" data-balloon="Close" href="#" class="close-search"><i class="bb-icon-l bb-icon-times"></i></a>
+		</div>
+	</div>
+</div>
+
+<div class="bb-mobile-panel-wrapper left light closed">
+	<div class="bb-mobile-panel-inner">
+		<div class="bb-mobile-panel-header">
+							<div class="logo-wrap">
+					<a href="https://digination.dev/" rel="home">
+						DigiNation					</a>
+				</div>
+						<a href="#" class="bb-close-panel"><i class="bb-icon-l bb-icon-times"></i></a>
+		</div>
+
+		<nav class="main-navigation" data-menu-space="120">
+			<ul id="menu-main-menu" class="bb-primary-menu mobile-menu buddypanel-menu side-panel-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-265"><a href="https://digination.dev/category/learn-to-code/"><i class='bb-icon-file'></i><span class='link-text'>Learn to Code</span></a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-266"><a href="https://digination.dev/category/web-development/"><i class='bb-icon-file'></i><span class='link-text'>Web development</span></a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-285"><a href="https://digination.dev/category/inspiration/"><i class='bb-icon-file'></i><span class='link-text'>Inspiration</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334"><a href="https://digination.dev/about/"><i class='bb-icon-file'></i><span class='link-text'>About</span></a></li>
+</ul>		</nav>
+
+	</div>
+</div>
+<div class="header-search-wrap">
+	<div class="container">
+
+<form role="search" method="get" class="search-form" action="https://digination.dev/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field-top" placeholder="Search" value="" name="s" />
+	</label>
+</form>
+		<a href="#" class="close-search"><i class="bb-icon-l bb-icon-times"></i></a>
+	</div>
+</div>			</header>
+
+
+
+			<div id="content" class="site-content">
+
+
+				<div class="container">
+					<div class="bb-elementor-content">		<div data-elementor-type="wp-page" data-elementor-id="62" class="elementor elementor-62" data-elementor-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-elementor-post-type="page">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-9a02574 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-id="9a02574" data-element_type="section" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-30f627f" data-id="30f627f" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-2a8bdc9 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2a8bdc9" data-element_type="section" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a6beec7" data-id="a6beec7" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4b88e40 elementor-widget elementor-widget-elementskit-heading" data-id="4b88e40" data-element_type="widget" data-widget_type="elementskit-heading.default">
+				<div class="elementor-widget-container">
+			<div class="ekit-wid-con" ><div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-"><h2 class="ekit-heading--title elementskit-section-title ">Join our DigiNation Community</h2></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-12d5ad6 elementor-widget elementor-widget-text-editor" data-id="12d5ad6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.18.0 - 20-12-2023 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>We empower people all over the world to build a better future using technology</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-2685e66 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="2685e66" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="/register">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Become a member</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b585525" data-id="b585525" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9487347 elementor-widget elementor-widget-image" data-id="9487347" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.18.0 - 20-12-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img fetchpriority="high" decoding="async" width="1920" height="1166" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIwIDExNjYiIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjExNjYiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZkaWdpbmF0aW9uLmRldiUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyMCUyRjA5JTJGbWFwLnBuZyIgZGF0YS13PSIxOTIwIiBkYXRhLWg9IjExNjYiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-full size-full wp-image-49" alt=""  />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-2e57756 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2e57756" data-element_type="section" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-fb10803" data-id="fb10803" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3651c187 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3651c187" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-302d56ac" data-id="302d56ac" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2a29c2d6 elementor-widget elementor-widget-heading" data-id="2a29c2d6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.18.0 - 20-12-2023 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h6 class="elementor-heading-title elementor-size-default">Learn with DigiNation</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2acbd6d9 elementor-widget elementor-widget-heading" data-id="2acbd6d9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Start Learning a Digital Skill Now</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5d10f55d elementor-widget elementor-widget-text-editor" data-id="5d10f55d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>World is changing rapidly and so is the technology. Learn a new technology to build a better future for you and for the world. Choose to learn web development, app development and many more</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3177c00e" data-id="3177c00e" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3c4268da elementor-widget elementor-widget-image" data-id="3c4268da" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="840" height="1054" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NDAgMTA1NCIgd2lkdGg9Ijg0MCIgaGVpZ2h0PSIxMDU0IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGZGlnaW5hdGlvbi5kZXYlMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjAlMkYwOSUyRnBvcnRyYWl0LW9mLXlvdW5nLWxhZHktaW4tZXllZ2xhc3Nlcy1zdGFuZGluZy13aXRoLUZVWjZCODQucG5nIiBkYXRhLXc9Ijg0MCIgZGF0YS1oPSIxMDU0IiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" class="attachment-full size-full wp-image-16" alt=""  />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6ab98bbf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ab98bbf" data-element_type="section" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-256483e9" data-id="256483e9" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4709a546 elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-shape-circle elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="4709a546" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://digination.dev/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">		<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="icon icon-film-play"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<div class="elementor-icon-box-title">
+					<span  >
+						Online Courses					</span>
+				</div>
+									<p class="elementor-icon-box-description">
+						We provide online courses that are easy to grasp.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-12255e14" data-id="12255e14" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4dfa4bbb elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-shape-circle elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="4dfa4bbb" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="icon icon-medal1"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<div class="elementor-icon-box-title">
+					<span  >
+						Quality Content					</span>
+				</div>
+									<p class="elementor-icon-box-description">
+						Great content written by domain experts.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-56e9744a" data-id="56e9744a" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-14627902 elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-shape-circle elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="14627902" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="icon icon-right-mark"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<div class="elementor-icon-box-title">
+					<span  >
+						Free access					</span>
+				</div>
+									<p class="elementor-icon-box-description">
+						All our courses are free and will always be free.					</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2cdbfa5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2cdbfa5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5642cb8" data-id="5642cb8" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c0b498e elementor-widget elementor-widget-heading" data-id="c0b498e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Free Course of the Month</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5a21a36 elementor-widget elementor-widget-text-editor" data-id="5a21a36" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>In WordPress Web Development </p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-a455269 elementor-widget elementor-widget-ld-courses" data-id="a455269" data-element_type="widget" data-widget_type="ld-courses.default">
+				<div class="elementor-widget-container">
+			<div id="learndash-content" class="learndash-course-list learndash-course-list--elementor learndash-course-list--classic noTitle noProgress">
+	<form data-current_page_url="https://digination.dev/" id="bb-courses-directory-form" class="bb-elementor-widget bb-courses-directory" method="get" action="">
+
+
+					<input type="hidden" name="current_page" value="1">
+			<div class="flex align-items-center bb-courses-header">
+								</div>
+
+		<div class="ld-secondary-header">
+			<div class="bb-secondary-list-tabs flex align-items-center" id="subnav" aria-label="Members directory secondary navigation" role="navigation">
+
+				<input type="hidden" id="course-order" name="order" value="desc"/>
+				<input type="hidden" id="post-per-page" name="posts_per_page" value="1"/>
+				<input type="hidden" id="current-page" name="current_page" value="0"/>
+
+				<div class="sfwd-courses-filters flex push-right">
+					<div class="select-wrap hide">
+						<select id="sfwd_prs-order-by" name="orderby">
+							<option value='alphabetical'  selected='selected'>Alphabetical</option><option value='recent' >Newly Created</option>						</select>
+					</div>
+
+												<div class="select-wrap hide">
+															</div>
+
+					<div class="select-wrap hide">
+						<select id="sfwd_instructors-order-by" name="filter-instructors">
+							<option value='all'>All Instructors</option><option value='1' >DigiNation</option><option value='3' >John</option>						</select>
+					</div>
+				</div>
+
+				<div class="grid-filters hide" data-view="ld-course">
+					<a href="#" class="layout-view layout-view-course layout-grid-view bp-tooltip " data-view="grid" data-bp-tooltip-pos="up" data-bp-tooltip="Grid View">
+						<i class="dashicons dashicons-screenoptions" aria-hidden="true"></i>
+					</a>
+
+					<a href="#" class="layout-view layout-view-course layout-list-view bp-tooltip active" data-view="list" data-bp-tooltip-pos="up" data-bp-tooltip="List View">
+						<i class="dashicons dashicons-menu" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-view bb-grid grid-box-">
+
+			<div id="course-dir-list" class="course-dir-list bs-dir-list columns-1 course-dir-list--media course-dir-list--status">
+									<ul class="bb-card-list bb-course-items list-view bb-list  " aria-live="assertive" aria-relevant="all">
+
+<li class="bb-course-item-wrap">
+
+	<div class="bb-cover-list-item ">
+		<div class="bb-course-cover">
+			<a title="How to Build an Online Community in 5 Easy Lessons" href="https://digination.dev/courses/how-to-build-an-online-community/" class="bb-cover-wrap">
+				<div class="ld-status ld-status-incomplete ld-third-background">Free</div>
+				<img decoding="async" width="300" height="200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDEzNjUiIHdpZHRoPSIyMDQ4IiBoZWlnaHQ9IjEzNjUiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZkaWdpbmF0aW9uLmRldiUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyMSUyRjAzJTJGMDctMjA0OHgxMzY1LmpwZyIgZGF0YS13PSIyMDQ4IiBkYXRhLWg9IjEzNjUiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-medium size-medium wp-post-image" alt="" srcset=" " sizes="(max-width: 300px) 100vw, 300px" />			</a>
+		</div>
+
+		<div class="bb-card-course-details bb-card-course-details--noAccess">
+			<div class="course-lesson-count">8 Lessons</div>			<h2 class="bb-course-title ">
+				<a title="How to Build an Online Community in 5 Easy Lessons" href="https://digination.dev/courses/how-to-build-an-online-community/">How to Build an Online Community in 5 Easy Lessons</a>
+			</h2>
+
+							<div class="bb-course-meta">
+		<a class="item-avatar" href="https://digination.dev/members/gabriel/">
+		<img alt='' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmRpZ2luYXRpb24uZGV2JTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkZhdmF0YXJzJTJGMSUyRjYwMTk4Y2QwMjg2ZDEtYnB0aHVtYi5wbmciIGRhdGEtdz0iMTUwIiBkYXRhLWg9IjE1MCIgZGF0YS1iaXA9IiI+PC9zdmc+' data-spai='1' class='avatar avatar-80 photo' height='80' width='80' />	</a>
+	<strong>
+		<a href="https://digination.dev/members/gabriel/">DigiNation</a>
+	</strong>
+</div>
+
+
+			<div class="bb-course-excerpt">
+				What you&#8217;ll learn in this free course Build a beautiful, fully functional social network on your website and your own domain powered by WordPress, BuddyPress&hellip;			</div>
+
+					</div>
+	</div>
+</li>
+					</ul>
+
+					<ul class="bb-card-list bb-course-items grid-view bb-grid hide " aria-live="assertive" aria-relevant="all">
+
+<li class="bb-course-item-wrap">
+
+	<div class="bb-cover-list-item ">
+		<div class="bb-course-cover">
+			<a title="How to Build an Online Community in 5 Easy Lessons" href="https://digination.dev/courses/how-to-build-an-online-community/" class="bb-cover-wrap">
+				<div class="ld-status ld-status-incomplete ld-third-background">Free</div>
+				<img decoding="async" width="300" height="200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDEzNjUiIHdpZHRoPSIyMDQ4IiBoZWlnaHQ9IjEzNjUiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZkaWdpbmF0aW9uLmRldiUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyMSUyRjAzJTJGMDctMjA0OHgxMzY1LmpwZyIgZGF0YS13PSIyMDQ4IiBkYXRhLWg9IjEzNjUiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-medium size-medium wp-post-image" alt="" srcset=" " sizes="(max-width: 300px) 100vw, 300px" />			</a>
+		</div>
+
+		<div class="bb-card-course-details bb-card-course-details--noAccess">
+			<div class="course-lesson-count">8 Lessons</div>			<h2 class="bb-course-title ">
+				<a title="How to Build an Online Community in 5 Easy Lessons" href="https://digination.dev/courses/how-to-build-an-online-community/">How to Build an Online Community in 5 Easy Lessons</a>
+			</h2>
+
+							<div class="bb-course-meta">
+		<a class="item-avatar" href="https://digination.dev/members/gabriel/">
+		<img alt='' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmRpZ2luYXRpb24uZGV2JTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkZhdmF0YXJzJTJGMSUyRjYwMTk4Y2QwMjg2ZDEtYnB0aHVtYi5wbmciIGRhdGEtdz0iMTUwIiBkYXRhLWg9IjE1MCIgZGF0YS1iaXA9IiI+PC9zdmc+' data-spai='1' class='avatar avatar-80 photo' height='80' width='80' />	</a>
+	<strong>
+		<a href="https://digination.dev/members/gabriel/">DigiNation</a>
+	</strong>
+</div>
+
+
+			<div class="bb-course-excerpt">
+				What you&#8217;ll learn in this free course Build a beautiful, fully functional social network on your website and your own domain powered by WordPress, BuddyPress&hellip;			</div>
+
+					</div>
+	</div>
+</li>
+					</ul>
+													</div>
+		</div>
+	</form>
+</div>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4bddd3c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4bddd3c" data-element_type="section" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d4d0f4c" data-id="d4d0f4c" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fd478e4 elementor-widget elementor-widget-heading" data-id="fd478e4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Latest Development Resources</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2039289 elementor-widget elementor-widget-text-editor" data-id="2039289" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Development Paths &#8211; Tips and tricks &#8211; Web Development &#8211; Mobile Apps</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-3358b95 elementor-grid-3 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-posts--show-avatar elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-posts" data-id="3358b95" data-element_type="widget" data-settings="{&quot;cards_columns&quot;:&quot;3&quot;,&quot;cards_columns_tablet&quot;:&quot;2&quot;,&quot;cards_columns_mobile&quot;:&quot;1&quot;,&quot;cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;cards_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;cards_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.cards">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://digination.dev/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css">		<div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
+				<article class="elementor-post elementor-grid-item post-387 post type-post status-publish format-standard has-post-thumbnail hentry category-web-development category-tips-tricks tag-roadmap">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://digination.dev/how-to-learn-web-development-in-2021-a-web-developer-roadmap/" tabindex="-1"><div class="elementor-post__thumbnail"><img decoding="async" width="300" height="169" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjgwIDcyMCIgd2lkdGg9IjEyODAiIGhlaWdodD0iNzIwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGZGlnaW5hdGlvbi5kZXYlMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjElMkYwMSUyRm1heHJlc2RlZmF1bHQtMy0uanBnIiBkYXRhLXc9IjEyODAiIGRhdGEtaD0iNzIwIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" class="attachment-medium size-medium wp-image-388" alt="" srcset=" " sizes="(max-width: 300px) 100vw, 300px" /></div></a>
+				<div class="elementor-post__badge">Web development</div>
+				<div class="elementor-post__avatar">
+			<img alt='DigiNation' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmRpZ2luYXRpb24uZGV2JTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkZhdmF0YXJzJTJGMSUyRjYwMTk4Y2QwMjg2ZDEtYnB0aHVtYi5wbmciIGRhdGEtdz0iMTUwIiBkYXRhLWg9IjE1MCIgZGF0YS1iaXA9IiI+PC9zdmc+' data-spai='1' class='avatar avatar-128 photo' height='128' width='128' />		</div>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://digination.dev/how-to-learn-web-development-in-2021-a-web-developer-roadmap/">
+				How to Learn Web Development in 2024 &#8211; a Web Developer Roadmap			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>There are some great roadmaps for web developers out there. But some make you solve a &#8220;puzzle&#8221; before even getting started, as there are multiple</p>
+		</div>
+
+		<a class="elementor-post__read-more" href="https://digination.dev/how-to-learn-web-development-in-2021-a-web-developer-roadmap/" aria-label="Read more about How to Learn Web Development in 2024 &#8211; a Web Developer Roadmap" tabindex="-1">
+			Read More »		</a>
+
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			January 19, 2021		</span>
+				<span class="elementor-post-avatar">
+			1 Comment		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-1126 post type-post status-publish format-standard has-post-thumbnail hentry category-web-development category-tips-tricks">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://digination.dev/javascript-closure-tutorial-how-closures-and-lexical-scope-work-in-js/" tabindex="-1"><div class="elementor-post__thumbnail"><img decoding="async" width="300" height="200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAwIDEzMzMiIHdpZHRoPSIyMDAwIiBoZWlnaHQ9IjEzMzMiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZkaWdpbmF0aW9uLmRldiUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyMSUyRjA3JTJGdGltLWV2YW5zLVVmLWM0dTF1c0ZRLXVuc3BsYXNoLmpwZyIgZGF0YS13PSIyMDAwIiBkYXRhLWg9IjEzMzMiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-medium size-medium wp-image-1127" alt="" srcset=" " sizes="(max-width: 300px) 100vw, 300px" /></div></a>
+				<div class="elementor-post__badge">Web development</div>
+				<div class="elementor-post__avatar">
+			<img alt='DigiNation' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmRpZ2luYXRpb24uZGV2JTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkZhdmF0YXJzJTJGMSUyRjYwMTk4Y2QwMjg2ZDEtYnB0aHVtYi5wbmciIGRhdGEtdz0iMTUwIiBkYXRhLWg9IjE1MCIgZGF0YS1iaXA9IiI+PC9zdmc+' data-spai='1' class='avatar avatar-128 photo' height='128' width='128' />		</div>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://digination.dev/javascript-closure-tutorial-how-closures-and-lexical-scope-work-in-js/">
+				JavaScript Closure Tutorial – How Closures and Lexical Scope Work in JS			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>In JavaScript, people often confuse closures with lexical scope. Lexical scope is an important part of closures, but it is not a closure by itself.</p>
+		</div>
+
+		<a class="elementor-post__read-more" href="https://digination.dev/javascript-closure-tutorial-how-closures-and-lexical-scope-work-in-js/" aria-label="Read more about JavaScript Closure Tutorial – How Closures and Lexical Scope Work in JS" tabindex="-1">
+			Read More »		</a>
+
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			January 25, 2024		</span>
+				<span class="elementor-post-avatar">
+			No Comments		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-3407 post type-post status-publish format-standard has-post-thumbnail hentry category-web-development">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://digination.dev/what-is-the-strangler-fig-pattern-and-how-it-helps-manage-legacy-code/" tabindex="-1"><div class="elementor-post__thumbnail"><img decoding="async" width="300" height="158" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDYzMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjMwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGZGlnaW5hdGlvbi5kZXYlMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjElMkYwOCUyRlN0cmFuZ2xlci1GaWcucG5nIiBkYXRhLXc9IjEyMDAiIGRhdGEtaD0iNjMwIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" class="attachment-medium size-medium wp-image-3408" alt="" srcset=" " sizes="(max-width: 300px) 100vw, 300px" /></div></a>
+				<div class="elementor-post__badge">Web development</div>
+				<div class="elementor-post__avatar">
+			<img alt='DigiNation' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmRpZ2luYXRpb24uZGV2JTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkZhdmF0YXJzJTJGMSUyRjYwMTk4Y2QwMjg2ZDEtYnB0aHVtYi5wbmciIGRhdGEtdz0iMTUwIiBkYXRhLWg9IjE1MCIgZGF0YS1iaXA9IiI+PC9zdmc+' data-spai='1' class='avatar avatar-128 photo' height='128' width='128' />		</div>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://digination.dev/what-is-the-strangler-fig-pattern-and-how-it-helps-manage-legacy-code/">
+				What is the Strangler Fig Pattern and How it Helps Manage Legacy Code			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Any sufficiently old codebase eventually starts to contain legacy code. Architecture, performance, comments, and more begin to degrade the moment after they are written. Some</p>
+		</div>
+
+		<a class="elementor-post__read-more" href="https://digination.dev/what-is-the-strangler-fig-pattern-and-how-it-helps-manage-legacy-code/" aria-label="Read more about What is the Strangler Fig Pattern and How it Helps Manage Legacy Code" tabindex="-1">
+			Read More »		</a>
+
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			September 13, 2022		</span>
+				<span class="elementor-post-avatar">
+			No Comments		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-3685 post type-post status-publish format-standard has-post-thumbnail hentry category-web-development category-learn-to-code">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://digination.dev/how-to-pass-data-and-events-between-components-in-react/" tabindex="-1"><div class="elementor-post__thumbnail"><img decoding="async" width="300" height="111" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDM4MCIgd2lkdGg9IjEwMjQiIGhlaWdodD0iMzgwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGZGlnaW5hdGlvbi5kZXYlMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjElMkYwOCUyRkNvbG9yZnVsLUFuaW1hbC1Dcm9zc2luZy1JY29ucy1JY29uLVNldC0yLnBuZyIgZGF0YS13PSIxMDI0IiBkYXRhLWg9IjM4MCIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" class="attachment-medium size-medium wp-image-3686" alt="" srcset=" " sizes="(max-width: 300px) 100vw, 300px" /></div></a>
+				<div class="elementor-post__badge">Web development</div>
+				<div class="elementor-post__avatar">
+			<img alt='DigiNation' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmRpZ2luYXRpb24uZGV2JTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkZhdmF0YXJzJTJGMSUyRjYwMTk4Y2QwMjg2ZDEtYnB0aHVtYi5wbmciIGRhdGEtdz0iMTUwIiBkYXRhLWg9IjE1MCIgZGF0YS1iaXA9IiI+PC9zdmc+' data-spai='1' class='avatar avatar-128 photo' height='128' width='128' />		</div>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://digination.dev/how-to-pass-data-and-events-between-components-in-react/">
+				How to Pass Data and Events Between Components in React			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>If you&#8217;re trying to implement CRUD operations using API endpoints, you might find that it&#8217;s hard to manage data across multiple components. Or maybe you</p>
+		</div>
+
+		<a class="elementor-post__read-more" href="https://digination.dev/how-to-pass-data-and-events-between-components-in-react/" aria-label="Read more about How to Pass Data and Events Between Components in React" tabindex="-1">
+			Read More »		</a>
+
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			August 15, 2022		</span>
+				<span class="elementor-post-avatar">
+			No Comments		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-3574 post type-post status-publish format-standard has-post-thumbnail hentry category-learn-to-code category-tips-tricks">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://digination.dev/why-learning-to-code-is-hard-and-how-to-make-it-easier/" tabindex="-1"><div class="elementor-post__thumbnail"><img decoding="async" width="300" height="200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIwIDEyODAiIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEyODAiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZkaWdpbmF0aW9uLmRldiUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyMSUyRjA4JTJGZGFuaWFsLWlnZGVyeS1GQ0hsWXZSNWdKSS11bnNwbGFzaC5qcGciIGRhdGEtdz0iMTkyMCIgZGF0YS1oPSIxMjgwIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" class="attachment-medium size-medium wp-image-3575" alt="" srcset=" " sizes="(max-width: 300px) 100vw, 300px" /></div></a>
+				<div class="elementor-post__badge">Learn to Code</div>
+				<div class="elementor-post__avatar">
+			<img alt='DigiNation' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmRpZ2luYXRpb24uZGV2JTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkZhdmF0YXJzJTJGMSUyRjYwMTk4Y2QwMjg2ZDEtYnB0aHVtYi5wbmciIGRhdGEtdz0iMTUwIiBkYXRhLWg9IjE1MCIgZGF0YS1iaXA9IiI+PC9zdmc+' data-spai='1' class='avatar avatar-128 photo' height='128' width='128' />		</div>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://digination.dev/why-learning-to-code-is-hard-and-how-to-make-it-easier/">
+				Why Learning to Code is Hard – And How to Make it Easier			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Are you struggling to learn to code? If you are, I want to help. So I have collected some tips from my personal experience to</p>
+		</div>
+
+		<a class="elementor-post__read-more" href="https://digination.dev/why-learning-to-code-is-hard-and-how-to-make-it-easier/" aria-label="Read more about Why Learning to Code is Hard – And How to Make it Easier" tabindex="-1">
+			Read More »		</a>
+
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			October 27, 2021		</span>
+				<span class="elementor-post-avatar">
+			1 Comment		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-3506 post type-post status-publish format-standard has-post-thumbnail hentry category-guides">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://digination.dev/what-is-full-stack-how-to-become-a-full-stack-developer/" tabindex="-1"><div class="elementor-post__thumbnail"><img decoding="async" width="300" height="158" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDYzMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjMwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGZGlnaW5hdGlvbi5kZXYlMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjElMkYwOCUyRnVpZGUtdG8td3JpdHRpbmctYS1nb29kLXJlYWRtZS1maWxlLTUtLnBuZyIgZGF0YS13PSIxMjAwIiBkYXRhLWg9IjYzMCIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" class="attachment-medium size-medium wp-image-3507" alt="" srcset=" " sizes="(max-width: 300px) 100vw, 300px" /></div></a>
+				<div class="elementor-post__badge">Guides</div>
+				<div class="elementor-post__avatar">
+			<img alt='DigiNation' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmRpZ2luYXRpb24uZGV2JTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkZhdmF0YXJzJTJGMSUyRjYwMTk4Y2QwMjg2ZDEtYnB0aHVtYi5wbmciIGRhdGEtdz0iMTUwIiBkYXRhLWg9IjE1MCIgZGF0YS1iaXA9IiI+PC9zdmc+' data-spai='1' class='avatar avatar-128 photo' height='128' width='128' />		</div>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://digination.dev/what-is-full-stack-how-to-become-a-full-stack-developer/">
+				What is Full Stack? How to Become a Full Stack Developer			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>You&#8217;ve probably seen the term &#8220;full stack developer&#8221; before, either on tech-related websites or in job applications you&#8217;ve perused. So have you ever wondered what</p>
+		</div>
+
+		<a class="elementor-post__read-more" href="https://digination.dev/what-is-full-stack-how-to-become-a-full-stack-developer/" aria-label="Read more about What is Full Stack? How to Become a Full Stack Developer" tabindex="-1">
+			Read More »		</a>
+
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			September 11, 2021		</span>
+				<span class="elementor-post-avatar">
+			No Comments		</span>
+				</div>
+					</div>
+		</article>
+				</div>
+
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a48fcc2 elementor-mobile-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="a48fcc2" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="/articles">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">More</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-43acb468 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="43acb468" data-element_type="section" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7105e4a7" data-id="7105e4a7" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-27038521 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="27038521" data-element_type="section" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1a1329db" data-id="1a1329db" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1e3d7243 elementor-widget elementor-widget-image" data-id="1e3d7243" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="640" height="427" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTcwIDc4MCIgd2lkdGg9IjExNzAiIGhlaWdodD0iNzgwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGZGlnaW5hdGlvbi5kZXYlMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjElMkYwMSUyRkZsYXQtTGluZS0xNC5qcGciIGRhdGEtdz0iMTE3MCIgZGF0YS1oPSI3ODAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-large size-large wp-image-151" alt="" srcset=" " sizes="(max-width: 640px) 100vw, 640px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1939d9ba" data-id="1939d9ba" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-637e3b68 elementor-widget elementor-widget-heading" data-id="637e3b68" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Transform your life <br>through education</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3a0d609e elementor-widget elementor-widget-text-editor" data-id="3a0d609e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Better education opens up a new wave of opportunities and it is now more relevant than ever in the times we live in where technology and education ensure that opportunities are no longer limited by geography.</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a191ae2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a191ae2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-40f5948c" data-id="40f5948c" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a6503d1 elementor-widget elementor-widget-heading" data-id="a6503d1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Join our Happy Community!
+</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2c285031 elementor-widget elementor-widget-text-editor" data-id="2c285031" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Subscribe &amp; get latest news and growth opportunities!</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-6dfd64e8 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="6dfd64e8" data-element_type="widget" data-settings="{&quot;button_width&quot;:&quot;33&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor-pro - v3.18.0 - 17-01-2024 */
+.elementor-button.elementor-hidden,.elementor-hidden{display:none}.e-form__step{width:100%}.e-form__step:not(.elementor-hidden){display:flex;flex-wrap:wrap}.e-form__buttons{flex-wrap:wrap}.e-form__buttons,.e-form__buttons__wrapper{display:flex}.e-form__indicators{display:flex;justify-content:space-between;align-items:center;flex-wrap:nowrap;font-size:13px;margin-bottom:var(--e-form-steps-indicators-spacing)}.e-form__indicators__indicator{display:flex;flex-direction:column;align-items:center;justify-content:center;flex-basis:0%;padding:0 var(--e-form-steps-divider-gap)}.e-form__indicators__indicator__progress{width:100%;position:relative;background-color:var(--e-form-steps-indicator-progress-background-color);border-radius:var(--e-form-steps-indicator-progress-border-radius);overflow:hidden}.e-form__indicators__indicator__progress__meter{width:var(--e-form-steps-indicator-progress-meter-width,0);height:var(--e-form-steps-indicator-progress-height);line-height:var(--e-form-steps-indicator-progress-height);padding-right:15px;border-radius:var(--e-form-steps-indicator-progress-border-radius);background-color:var(--e-form-steps-indicator-progress-color);color:var(--e-form-steps-indicator-progress-meter-color);text-align:right;transition:width .1s linear}.e-form__indicators__indicator:first-child{padding-left:0}.e-form__indicators__indicator:last-child{padding-right:0}.e-form__indicators__indicator--state-inactive{color:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-inactive-secondary-color,#fff)}.e-form__indicators__indicator--state-inactive object,.e-form__indicators__indicator--state-inactive svg{fill:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-active{color:var(--e-form-steps-indicator-active-primary-color,#39b54a);border-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active object,.e-form__indicators__indicator--state-active svg{fill:var(--e-form-steps-indicator-active-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed{color:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a);background-color:initial}.e-form__indicators__indicator--state-completed object,.e-form__indicators__indicator--state-completed svg{fill:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator__icon{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);font-size:var(--e-form-steps-indicator-icon-size);border-width:1px;border-style:solid;display:flex;justify-content:center;align-items:center;overflow:hidden;margin-bottom:10px}.e-form__indicators__indicator__icon img,.e-form__indicators__indicator__icon object,.e-form__indicators__indicator__icon svg{width:var(--e-form-steps-indicator-icon-size);height:auto}.e-form__indicators__indicator__icon .e-font-icon-svg{height:1em}.e-form__indicators__indicator__number{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);border-width:1px;border-style:solid;display:flex;justify-content:center;align-items:center;margin-bottom:10px}.e-form__indicators__indicator--shape-circle{border-radius:50%}.e-form__indicators__indicator--shape-square{border-radius:0}.e-form__indicators__indicator--shape-rounded{border-radius:5px}.e-form__indicators__indicator--shape-none{border:0}.e-form__indicators__indicator__label{text-align:center}.e-form__indicators__indicator__separator{width:100%;height:var(--e-form-steps-divider-width);background-color:#babfc5}.e-form__indicators--type-icon,.e-form__indicators--type-icon_text,.e-form__indicators--type-number,.e-form__indicators--type-number_text{align-items:flex-start}.e-form__indicators--type-icon .e-form__indicators__indicator__separator,.e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,.e-form__indicators--type-number .e-form__indicators__indicator__separator,.e-form__indicators--type-number_text .e-form__indicators__indicator__separator{margin-top:calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)}.elementor-field-type-hidden{display:none}.elementor-field-type-html{display:inline-block}.elementor-field-type-tel input{direction:inherit}.elementor-login .elementor-lost-password,.elementor-login .elementor-remember-me{font-size:.85em}.elementor-field-type-recaptcha_v3 .elementor-field-label{display:none}.elementor-field-type-recaptcha_v3 .grecaptcha-badge{z-index:1}.elementor-button .elementor-form-spinner{order:3}.elementor-form .elementor-button>span{display:flex;justify-content:center;align-items:center}.elementor-form .elementor-button .elementor-button-text{white-space:normal;flex-grow:0}.elementor-form .elementor-button svg{height:auto}.elementor-form .elementor-button .e-font-icon-svg{height:1em}.elementor-select-wrapper .select-caret-down-wrapper{position:absolute;top:50%;transform:translateY(-50%);inset-inline-end:10px;pointer-events:none;font-size:11px}.elementor-select-wrapper .select-caret-down-wrapper svg{display:unset;width:1em;aspect-ratio:unset;fill:currentColor}.elementor-select-wrapper .select-caret-down-wrapper i{font-size:19px;line-height:2}.elementor-select-wrapper.remove-before:before{content:""!important}</style>		<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="62"/>
+			<input type="hidden" name="form_id" value="6dfd64e8"/>
+			<input type="hidden" name="referer_title" value="Learn Digital Skills for a brighter tomorrow - DigiNation" />
+
+							<input type="hidden" name="queried_id" value="62"/>
+
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-66 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Email							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Your Email Address" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-33 e-form__buttons">
+					<button type="submit" class="elementor-button elementor-size-sm">
+						<span >
+															<span class=" elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">Get Started</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+
+
+</div><!-- .bb-grid -->
+</div><!-- .container -->
+</div><!-- #content -->
+
+
+		<div data-elementor-type="footer" data-elementor-id="26" class="elementor elementor-26 elementor-location-footer" data-elementor-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-elementor-post-type="elementor_library">
+								<section class="elementor-section elementor-top-section elementor-element elementor-element-8b3d67b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8b3d67b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-287dbd9a" data-id="287dbd9a" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c55cfc4 elementor-widget elementor-widget-theme-site-title elementor-widget-heading" data-id="c55cfc4" data-element_type="widget" data-widget_type="theme-site-title.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://digination.dev">DigiNation</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-365c553d elementor-widget elementor-widget-text-editor" data-id="365c553d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Develop yourself in the digital era for a brighter tomorrow. Our community is here to help along the way.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6f70405e" data-id="6f70405e" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2cedd2f2 elementor-widget elementor-widget-heading" data-id="2cedd2f2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">About</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-413ec434 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="413ec434" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://digination.dev/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://digination.dev/about/#mission">
+
+											<span class="elementor-icon-list-text">Our mission</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/about/#story">
+
+											<span class="elementor-icon-list-text">Our story</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/register">
+
+											<span class="elementor-icon-list-text">Become a member</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://digination.dev/contact-us/">
+
+											<span class="elementor-icon-list-text">Contact us</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://digination.dev/terms-of-service/">
+
+											<span class="elementor-icon-list-text">Terms of Service</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-515dd73a" data-id="515dd73a" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7313bcaa elementor-widget elementor-widget-heading" data-id="7313bcaa" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">Learn
+</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b90583b elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="b90583b" data-element_type="widget"  data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-spai-egr="1" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://digination.dev/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css">			<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-b90583b" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-265"><a href="https://digination.dev/category/learn-to-code/" class="elementor-item">Learn to Code</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-266"><a href="https://digination.dev/category/web-development/" class="elementor-item">Web development</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-285"><a href="https://digination.dev/category/inspiration/" class="elementor-item">Inspiration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334"><a href="https://digination.dev/about/" class="elementor-item">About</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
+		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-b90583b" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-265"><a href="https://digination.dev/category/learn-to-code/" class="elementor-item" tabindex="-1">Learn to Code</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-266"><a href="https://digination.dev/category/web-development/" class="elementor-item" tabindex="-1">Web development</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-285"><a href="https://digination.dev/category/inspiration/" class="elementor-item" tabindex="-1">Inspiration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334"><a href="https://digination.dev/about/" class="elementor-item" tabindex="-1">About</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1f85b413 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1f85b413" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1e0e63f2" data-id="1e0e63f2" data-element_type="column" data-settings="{&quot;premium_particles_zindex&quot;:0,&quot;premium_particles_responsive&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4c34e278 elementor-widget elementor-widget-text-editor" data-id="4c34e278" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>© 2021 Digital Development Association , All Rights Reserved</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+
+</div><!-- #page -->
+
+
+
+<div id="content-report" class="content-report-popup moderation-popup mfp-hide">
+	<div class="modal-mask bb-white bbm-model-wrap bbm-uploader-model-wrap">
+		<div class="modal-wrapper">
+			<div class="modal-container">
+				<header class="bb-model-header">
+					<h4>Report <span class="bp-reported-type"></span></h4>
+					<button title="Close (Esc)" type="button" class="mfp-close">
+						<span class="bb-icon-l bb-icon-times"></span>
+					</button>
+				</header>
+				<div class="bp-feedback bp-feedback-v2 error" id="notes-error" style="display: none;">
+					<span class="bp-icon" aria-hidden="true"></span>
+					<p>There was a problem reporting this post.</p>
+				</div>
+								<div class="bb-report-type-wrp">
+					<form id="bb-report-content" action="javascript:void(0);">
+
+														<div class="form-item form-item-category content">
+									<label for="report-category-34">
+										<input type="radio" id="report-category-34" name="report_category" value="34" checked>
+										<span>Harassment</span>
+									</label>
+									<span>Harassment or bullying behavior</span>
+								</div>
+																<div class="form-item form-item-category content">
+									<label for="report-category-31">
+										<input type="radio" id="report-category-31" name="report_category" value="31" >
+										<span>Inappropriate</span>
+									</label>
+									<span>Contains mature or sensitive content</span>
+								</div>
+																<div class="form-item form-item-category content">
+									<label for="report-category-32">
+										<input type="radio" id="report-category-32" name="report_category" value="32" >
+										<span>Misinformation</span>
+									</label>
+									<span>Contains misleading or false information</span>
+								</div>
+																<div class="form-item form-item-category content">
+									<label for="report-category-30">
+										<input type="radio" id="report-category-30" name="report_category" value="30" >
+										<span>Offensive</span>
+									</label>
+									<span>Contains abusive or derogatory content</span>
+								</div>
+																<div class="form-item form-item-category content">
+									<label for="report-category-33">
+										<input type="radio" id="report-category-33" name="report_category" value="33" >
+										<span>Suspicious</span>
+									</label>
+									<span>Contains spam, fake content or potential malware</span>
+								</div>
+
+						<div class="form-item">
+							<label for="report-category-other">
+								<input type="radio" id="report-category-other" name="report_category" value="other">
+								<span>Other</span>
+							</label>
+						</div>
+						<div class="form-item bp-hide">
+							<label for="report-note">
+								<span class="screen-reader-text">Report note</span>
+								<textarea id="report-note" placeholder="Enter your reason for reporting..." name="note" class="bp-other-report-cat"></textarea>
+							</label>
+						</div>
+						<footer class="bb-model-footer">
+							<input type="button" class="bb-cancel-report-content button" value="Cancel"/>
+							<button type="submit" class="report-submit button">Report</button>
+							<input type="hidden" name="content_id" class="bp-content-id"/>
+							<input type="hidden" name="content_type" class="bp-content-type"/>
+							<input type="hidden" name="_wpnonce" class="bp-nonce"/>
+						</footer>
+					</form>
+					<div class="bp-report-form-err"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div id="block-member" class="block-member-popup moderation-popup mfp-hide">
+	<div class="modal-mask bb-white bbm-model-wrap bbm-uploader-model-wrap">
+			<div class="modal-wrapper">
+				<div class="modal-container">
+					<header class="bb-model-header">
+						<h4>Block Member?</h4>
+						<button title="Close (Esc)" type="button" class="mfp-close">
+							<span class="bb-icon-l bb-icon-times"></span>
+						</button>
+					</header>
+
+					<div class="bb-report-type-wrp">
+						<p>
+							Please confirm you want to block this member.						</p>
+						<p>
+							You will no longer be able to:						</p>
+						<ul>
+														<li>
+								See blocked member&#039;s posts							</li>
+														<li>
+								Mention this member in posts							</li>
+																					<li>
+								Message this member							</li>
+																					<li>
+								Add this member as a connection							</li>
+													</ul>
+
+						<p>
+															<strong>Please note: </strong>
+								This action will also remove this member from your connections and send a report to the site admin.
+							Please allow a few minutes for this process to complete.						</p>
+						<form id="bb-block-member" action="javascript:void(0);">
+							<footer class="bb-model-footer">
+								<input type="button" class="bb-cancel-report-content button" value="Cancel"/>
+								<button type="submit" class="report-submit button">Confirm</button>
+								<input type="hidden" name="content_id" class="bp-content-id"/>
+								<input type="hidden" name="content_type" class="bp-content-type"/>
+								<input type="hidden" name="_wpnonce" class="bp-nonce"/>
+							</footer>
+						</form>
+												<div class="bp-report-form-err"></div>
+					</div>
+
+				</div>
+			</div>
+	</div>
+
+</div>
+
+<div id="reported-content" class="content-report-popup moderation-popup mfp-hide">
+	<div class="modal-mask bb-white bbm-model-wrap bbm-uploader-model-wrap">
+		<div class="modal-wrapper">
+			<div class="modal-container">
+				<header class="bb-model-header">
+					<h4>
+						Report <span class="bp-reported-type"></span>					</h4>
+					<button title="Close (Esc)" type="button" class="mfp-close">
+						<span class="bb-icon-l bb-icon-times"></span>
+					</button>
+				</header>
+
+				<div class="bb-report-type-wrp">
+					You have already reported this <span class="bp-reported-type"></span>.				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8787429-4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());gtag('config','UA-8787429-4');gtag('config','AW-430708657');gtag('config','GTM-57DVP26')</script>
+
+<script type="text/javascript" id="bp-livestamp-js-extra">
+/* <![CDATA[ */
+var bb_livestamp = {"year_in_seconds":"31536000","day_in_seconds":"86400","week_in_seconds":"604800","hour_in_seconds":"3600","minute_in_seconds":"60","chunks":[31536000,5256000,2592000,604800,86400,3600,60,1],"unknown_text":"sometime","right_now_text":"a second","ago_text":"%s ago","second_text":"a second","seconds_text":"seconds","minute_text":"a minute","minutes_text":"minutes","hour_text":"an hour","hours_text":"hours","day_text":"a day","days_text":"days","week_text":"a week","weeks_text":"weeks","month_text":"a month","months_text":"months","year_text":"a year","years_text":"years"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" id="bp-nouveau-js-extra">
+/* <![CDATA[ */
+var BP_Nouveau = {"ajaxurl":"https:\/\/digination.dev\/wp-admin\/admin-ajax.php","only_admin_notice":"As you are the only organizer of this group, you cannot leave it. You can either delete the group or promote another member to be an organizer first and then leave the group.","is_friend_confirm":"Are you sure you want to remove your connection with this member?","confirm":"Are you sure?","confirm_delete_set":"Are you sure you want to delete this set? This cannot be undone.","show_x_comments":"View previous comments","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","object_nav_parent":"#buddypress","anchorPlaceholderText":"Paste or type a link","empty_field":"New Field","close":"Close","parent_group_leave_confirm":"By leaving this main group you will automatically be removed and unsubscribed to any subgroups relating to this group.","group_leave_confirm":"<p>Are you sure you want to leave <span class=\"bb-group-name\"><\/span>?<\/p>","objects":{"0":"activity","1":"members","4":"xprofile","5":"friends","9":"messages","10":"settings","11":"notifications","13":"moderation"},"nonces":{"activity":"50069fc778","members":"21d17c9a0f","xprofile":"f6a1068968","friends":"633859194b","messages":"3c71da072a","settings":"3bb00a7deb","notifications":"dc74fd2fb2","moderation":"44f4136593"},"modbypass":null,"nonce":{"bp_moderation_content_nonce":"5b419af838"},"current":{"message_user_id":0},"archived_threads":[],"activity":{"params":{"user_id":0,"object":"user","backcompat":false,"post_nonce":"a4ef1d6083","post_draft_nonce":"8071c48156","excluded_hosts":[],"user_can_post":false,"is_activity_edit":false,"displayed_user_id":0,"errors":{"empty_post_update":"Sorry, Your update cannot be empty.","post_fail":"An error occurred while saving your post.","media_fail":"To change the media type, remove existing media from your post."},"avatar_url":"https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform\/bp-core\/images\/profile-avatar-buddyboss-50.png","avatar_width":150,"avatar_height":150,"user_display_name":false,"user_domain":"","avatar_alt":"Profile photo of ","autoload":true,"objects":{"profile":{"text":"Post in: Profile","autocomplete_placeholder":"","priority":5}},"draft_activity":false,"access_control_settings":{"can_create_activity":true,"can_create_activity_media":true,"can_create_activity_document":true}},"strings":{"whatsnewPlaceholder":"Share what's on your mind, ...","whatsnewLabel":"Post what&#039;s new","whatsnewpostinLabel":"Post in","postUpdateButton":"Post","updatePostButton":"Update Post","cancelButton":"Cancel","commentLabel":"%d Comment","commentsLabel":"%d Comments","loadingMore":"Loading...","discardButton":"Discard Draft","pinPost":"Pin to Feed","unpinPost":"Unpin from Feed","pinGroupPost":"Pin to Group","unpinGroupPost":"Unpin from Group","pinPostError":"There was a problem marking this operation. Please try again.","reactionAjaxError":"There was a problem marking this operation. Please try again."}},"moderation":{"unblock_user_msg":"Are you sure you want to unblock this member?","no_user_msg":"No blocked members found."}};
+var BB_Nouveau_Presence = {"heartbeat_enabled":"1","presence_interval":"60","presence_default_interval":"60","presence_time_span":"20","idle_inactive_span":"180","rest_nonce":"591197ae86","native_presence":"","native_presence_url":"https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform\/bp-core\/bb-core-native-presence.php","presence_rest_url":"https:\/\/digination.dev\/wp-json\/buddyboss\/v1\/members\/presence"};
+/* ]]> */
+</script>
+<script   type="text/javascript" src="https://digination.dev/wp-includes/js/comment-reply.min.js" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="heartbeat-js-extra">
+/* <![CDATA[ */
+var heartbeatSettings = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/digination.dev\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="spai-scripts-js-extra">
+/* <![CDATA[ */
+var spai_settings = {"api_domain":"cdn.shortpixel.ai","api_url":"https:\/\/cdn.shortpixel.ai\/spai\/w_%WIDTH%+q_lossy+ret_img","api_short_url":"https:\/\/cdn.shortpixel.ai\/spai\/ret_img","method":"src","crop":"","size_breakpoints":{"on":null,"base":null,"rate":null},"lqip":"","lazy_threshold":"500","hover_handling":"","native_lazy":"","serve_svg":"1","debug":"","site_url":"https:\/\/digination.dev","plugin_url":"https:\/\/digination.dev\/wp-content\/plugins\/shortpixel-adaptive-images","version":"3.8.2","excluded_selectors":[],"eager_selectors":[],"noresize_selectors":[],"alter2wh":"","use_first_sizes":[],"lazy_bg_style":"1","active_integrations":{"nextgen":false,"modula":false,"elementor":true,"elementor-addons":true,"viba-portfolio":false,"envira":false,"everest":false,"wp-bakery":false,"woocommerce":false,"wpc-variations":false,"foo":false,"global-gallery":false,"essential-grid":false,"oxygen":false,"slider-revolution":false,"custom-facebook-feed":false,"smart-slider":false,"real3d-flipbook":false,"wp-grid-builder":false,"beaver-builder":false,"the-grid":false,"social-pug":false,"instagram-feed":false,"insta-gallery":false,"content-views":false,"featherlight":false,"lightbox-photoswipe":false,"acf":false,"soliloquy":false,"jetpack":false,"wp-rocket":{"lazyload":false,"css-filter":false,"minify-css":false,"defer-all-js":false,"video-placeholder":false},"perfmatters":false,"swift-performance":false,"imagify":{"active":false},"wp-fastest-cache":false,"litespeed-cache":false,"w3-total-cache":false,"wp-super-cache":false,"wp-optimize":{"active":false,"enable_css":false,"enable_merging_of_css":false},"breeze":false,"smart-cookie-kit":false,"wpzoom-theme":false,"avia-gallery-module":false,"theme":"BuddyBoss Child"},"parse_css_files":"","backgrounds_max_width":"1920","sep":"+","webp":"1","avif":"","webp_detect":"","extensions_to_nextgenimg":{"png":true,"jpg":true,"gif":true},"sniper":"https:\/\/digination.dev\/wp-content\/plugins\/shortpixel-adaptive-images\/assets\/img\/target.cur","affected_tags":"{\"link\":1}","ajax_url":"https:\/\/digination.dev\/wp-admin\/admin-ajax.php","excluded_paths":["cmVnZXg6L1wvXC8oW15cL10qXC58KWdyYXZhdGFyLmNvbVwvLw=="]};
+/* ]]> */
+</script>
+<script type="text/javascript" id="ta_main_js-js-extra">
+/* <![CDATA[ */
+var thirsty_global_vars = {"home_url":"\/\/digination.dev","ajax_url":"https:\/\/digination.dev\/wp-admin\/admin-ajax.php","link_fixer_enabled":"yes","link_prefix":"link","link_prefixes":["recommends","link"],"post_id":"62","enable_record_stats":"yes","enable_js_redirect":"yes","disable_thirstylink_class":""};
+/* ]]> */
+</script>
+<script type="text/javascript" id="learndash_template_script_js-js-extra">
+/* <![CDATA[ */
+var sfwd_data = {"json":"{\"ajaxurl\":\"https:\\\/\\\/digination.dev\\\/wp-admin\\\/admin-ajax.php\"}"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="bp-zoom-js-js-extra">
+/* <![CDATA[ */
+var bp_zoom_vars = {"ajax_url":"https:\/\/digination.dev\/wp-admin\/admin-ajax.php","home_url":"https:\/\/digination.dev","is_single_meeting":"","is_single_webinar":"","group_id":"","group_meetings_url":"","group_meetings_past_url":"","group_webinars_url":"","group_webinar_past_url":"","meeting_delete_nonce":"b5c9b5df62","meeting_confirm_msg":"Are you sure you want to delete this meeting?","webinar_delete_nonce":"830a0b16f5","webinar_confirm_msg":"Are you sure you want to delete this webinar?","user":{"name":"Guest","email":"guest@domain.com"},"scripts":["https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/react.production.min.js","https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/react-dom.production.min.js","https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/redux.min.js","https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/redux-thunk.min.js","https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/lodash.min.js","https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/jquery.min.js"],"styles":["https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/bootstrap.css","https:\/\/digination.dev\/wp-content\/plugins\/buddyboss-platform-pro\/includes\/integrations\/zoom\/assets\/js\/zoom-web-sdk\/react-select.css"],"strings":{"day":"day","month":"month","week":"week"},"lang":"en-US","is_zoom_sdk":""};
+/* ]]> */
+</script>
+<script type="text/javascript" id="bb-countdown-js-js-extra">
+/* <![CDATA[ */
+var bb_countdown_vars = {"daysStr":"Days","hoursStr":"Hours","minutesStr":"Minutes","secondsStr":"Seconds"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="buddyboss-theme-main-js-js-extra">
+/* <![CDATA[ */
+var bs_data = {"jm_ajax":"https:\/\/digination.dev\/jm-ajax\/","ajaxurl":"https:\/\/digination.dev\/wp-admin\/admin-ajax.php","show_notifications":"1","show_messages":"1","facebook_label":"Share on Facebook","twitter_label":"Tweet","translation":{"comment_posted":"Your comment has been posted.","comment_btn_loading":"Please Wait...","choose_a_file_label":"Choose a file","email_validation":"Please enter a valid email address."},"gamipress_badge_label":"Badge","nonce_list_grid":"c8d66eaea5","learndash":{"nonce_get_courses":"3dd30bab58","course_archive_url":"https:\/\/digination.dev\/courses\/"}};
+/* ]]> */
+</script>
+<script type="text/javascript" id="buddyboss-theme-learndash-js-js-extra">
+/* <![CDATA[ */
+var BBTHEME_LEARNDASH_FRONT_VIDEO = {"hide_wrapper":"show","video_progression_enabled":"off","video_type":""};
+/* ]]> */
+</script>
+<script type="text/javascript" id="eael-general-js-extra">
+/* <![CDATA[ */
+var localize = {"ajaxurl":"https:\/\/digination.dev\/wp-admin\/admin-ajax.php","nonce":"5da14acb5b","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/digination.dev\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+/* ]]> */
+</script>
+<script   type="text/javascript" id="elementor-pro-frontend-js-before">
+/* <![CDATA[ */
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/digination.dev\/wp-admin\/admin-ajax.php","nonce":"2e85875664","urls":{"assets":"https:\/\/digination.dev\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/digination.dev\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/digination.dev\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+/* ]]> */
+</script>
+<script data-wpacu-to-be-preloaded-basic='1' type='text/javascript' id='wpacu-combined-js-body-group-1' src='https://digination.dev/wp-content/cache/asset-cleanup/js/body-f9fdc7a153dfb146c72077a606088892afcd116f.js'></script>
+</body>
+</html>
+
+
+<!-- Page cached by LiteSpeed Cache 6.0.0.1 on 2024-02-12 15:19:59 -->
